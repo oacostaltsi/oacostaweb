@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Acosta - Full Professor | LTSI-Université de Rennes-ISTIC</title>
+    <meta name="description" content="Oscar Acosta - Full Professor in Biomedical Engineering, Radiotherapy, and Medical Imaging">
+    <meta name="keywords" content="Oscar Acosta, Biomedical Engineering, Medical Imaging, Radiotherapy, LTSI, Université de Rennes">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="setLanguage('en')" class="lang-btn active" data-lang="en">EN</button>
+        <button onclick="setLanguage('fr')" class="lang-btn" data-lang="fr">FR</button>
+        <button onclick="setLanguage('es')" class="lang-btn" data-lang="es">ES</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Oscar Acosta</h1>
+                <p class="subtitle" data-i18n="nav.subtitle">Full Professor - Biomedical Engineering</p>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#research" data-i18n="nav.research">Research</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 data-i18n="hero.title">Oscar Acosta</h2>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Full Professor - LTSI | Université de Rennes | ISTIC</p>
+            <div class="hero-meta">
+                <span class="badge">Biomedical Engineering</span>
+                <span class="badge">Medical Imaging</span>
+                <span class="badge">Radiotherapy</span>
+            </div>
+            <div class="hero-links">
+                <a href="#about" class="cta-button" data-i18n="hero.learn">Learn More</a>
+                <a href="#contact" class="cta-button secondary" data-i18n="hero.contact">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-accent"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About</h2>
+            
+            <div class="about-content">
+                <div class="about-photo">
+                    <img src="assets/images/oscar-acosta-profile.jpeg" alt="Oscar Acosta" class="profile-image">
+                    <div class="affiliations-logos">
+                        <div class="logo-item">
+                            <img src="assets/images/ltsi-logo.png" alt="LTSI" title="Signal and Image Processing Laboratory">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/images/rennes-logo.png" alt="Université de Rennes" title="Université de Rennes">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/images/inserm-logo.png" alt="INSERM" title="Institut National de la Santé et de la Recherche Médicale">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 data-i18n="about.heading">Full Professor at Université de Rennes</h3>
+                    
+                    <p data-i18n="about.intro">I am a Full Professor at the Signal and Image Processing Laboratory (LTSI-INSERM 1099), University of Rennes, France. My current research activities focus on image processing and computational methods for devising innovative and personalized radiotherapy in cancer care. This research work is being developed in tight collaboration with clinicians and medical physicists at the Anti-Cancer Center, Eugène Marquis.</p>
+                    
+                    <p data-i18n="about.intro2">My expertise includes predictive models for radiotherapy, with a focus on introducing innovative methodologies for 3D data mining and digital twins. Throughout my career, I have established a strong track record in medical image processing and computational analysis, contributing to both fundamental research and clinical applications in cancer treatment planning and outcome prediction.</p>
+                    
+                    <p data-i18n="about.intro3">General Chair, <a href="https://biomedicalimaging.org/2023/" target="_blank">ISBI 2023</a> - the IEEE International Symposium on Biomedical Imaging held in Cartagena, Colombia. The first ISBI held in Latin America.</p>
+                    
+                    <h4 data-i18n="about.experience">Professional Experience</h4>
+                    <ul>
+                        <li data-i18n="about.exp1">Full Professor, LTSI-INSERM 1099, Université de Rennes, France (Sep 2025 - Present)</li>
+                        <li data-i18n="about.exp2">Associate Professor, LTSI-INSERM 1099, Université de Rennes, France (Nov 2009 - Aug 2025)</li>
+                        <li data-i18n="about.exp3">Head of Master Program in Electronics and Automatics Engineering, Université de Rennes (2017 - 2021)</li>
+                        <li data-i18n="about.exp4">Research Scientist, CSIRO, Australia (Nov 2005 - Nov 2009)</li>
+                        <li data-i18n="about.exp5">Member, INSERM Scientific Specialized Commission CSS8 - Technologies for Health (2012 - 2016)</li>
+                    </ul>
+                    
+                    <h4 data-i18n="about.education">Education</h4>
+                    <ul>
+                        <li data-i18n="about.edu1">HDR (Accreditation to Direct Research), Université de Rennes, France (2021)</li>
+                        <li data-i18n="about.edu2">PhD in Biomedical Image Processing, Université de Rennes, France (2004)</li>
+                        <li data-i18n="about.edu3">M.S. in Biomedical Engineering, Universidad de los Andes, Bogotá, Colombia (1997)</li>
+                        <li data-i18n="about.edu4">B.S. in Electrical Engineering, Universidad de los Andes, Bogotá, Colombia (1995)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Areas Section -->
+    <section id="research" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="research.title">Research Areas</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3 data-i18n="research.area2">Radiomics & Outcome Prediction</h3>
+                    <p data-i18n="research.area2_desc">Machine learning models for predicting treatment response and toxicity</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-robot"></i>
+                    <h3 data-i18n="research.area3">Digital Twins</h3>
+                    <p data-i18n="research.area3_desc">Computational simulation models for personalized treatment planning</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-cube"></i>
+                    <h3 data-i18n="research.area4">Organ Segmentation</h3>
+                    <p data-i18n="research.area4_desc">Deep learning-based automatic delineation of organs-at-risk</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3 data-i18n="research.area5">Voxel-Based Analysis</h3>
+                    <p data-i18n="research.area5_desc">Population-based statistical analysis for toxicity prediction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funded Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects.title">Funded Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-with-logo">
+                            <img src="assets/images/ttrail-logo.png" alt="TTRAIL Logo" class="project-logo">
+                            <h3>TTRAIL</h3>
+                        </div>
+                        <span class="project-badge">2026 - Present</span>
+                    </div>
+                    <p class="project-acronym" data-i18n="projects.ttrail_full">Trustworthy Transferable Radiotherapy with Artificial Intelligence</p>
+                    <p data-i18n="projects.ttrail_desc"><strong>MSCA Doctoral Network</strong> coordinator. A major European initiative for implementing trustworthy AI in radiotherapy.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> EU MSCA</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>TwinCaRT</h3>
+                        <span class="project-badge">2026 - 2030</span>
+                    </div>
+                    <p class="project-acronym" data-i18n="projects.twincart_full">Digital Twins for Prostate Cancer Radiotherapy</p>
+                    <p data-i18n="projects.twincart_desc">Principal Investigator. Digital twins for personalized radiotherapy in prostate cancer within the French PEPR Digital Health program.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-university"></i> ANR PEPR</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>PreDTWin</h3>
+                        <span class="project-badge">2023 - 2026</span>
+                    </div>
+                    <p class="project-acronym" data-i18n="projects.predtwin_desc">Predictive Digital Twin modeling for cancer radiotherapy outcome response.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-university"></i> INSERM</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>PerPlanRT</h3>
+                        <span class="project-badge">2021 - 2024</span>
+                    </div>
+                    <p class="project-acronym" data-i18n="projects.perplan_full">Personalized Planning in Radiotherapy</p>
+                    <p data-i18n="projects.perplan_desc">Integrative modeling of local dose effects and new dosimetric constraints.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-university"></i> ANR</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>EraPerMEd</h3>
+                        <span class="project-badge">2021 - 2024</span>
+                    </div>
+                    <p class="project-acronym" data-i18n="projects.erapermed_desc">European initiative for personalized medicine in radiotherapy.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-globe"></i> ERA PerMed</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>RAMPART</h3>
+                        <span class="project-badge">2016 - 2019</span>
+                    </div>
+                    <p class="project-acronym" data-i18n="projects.rampart_full">Radiomics and Modeling for Prostate RadioTherapy</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-university"></i> LABEX CominLabs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="publications.title">Publications & Resources</h2>
+            
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-i18n="publications.scholar">Google Scholar</h3>
+                    <p data-i18n="publications.scholar_desc">216+ publications indexed with h-index and citation metrics</p>
+                    <a href="https://scholar.google.com/citations?hl=en&user=rHHitXEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="resource-link">
+                        <i class="fas fa-external-link-alt"></i> View Profile
+                    </a>
+                </div>
+
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-book-medical"></i>
+                    </div>
+                    <h3 data-i18n="publications.pubmed">PubMed</h3>
+                    <p data-i18n="publications.pubmed_desc">Indexed medical publications in PubMed database</p>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Acosta%2C+Oscar%5BFull+Author+Name%5D+OR+Acosta+O%5BInvestigator%5D+AND+%28CSIRO%5BAffiliation%5D+OR+LTSI%5BAffiliation%5D+or+Rennes%5Bcity%5D%29&sort=date" target="_blank" class="resource-link">
+                        <i class="fas fa-external-link-alt"></i> View Publications
+                    </a>
+                </div>
+
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 data-i18n="publications.orcid">ORCID Profile</h3>
+                    <p data-i18n="publications.orcid_desc">Complete academic profile with all publications and activities</p>
+                    <a href="https://orcid.org/0000-0002-5447-1479" target="_blank" class="resource-link">
+                        <i class="fas fa-external-link-alt"></i> 0000-0002-5447-1479
+                    </a>
+                </div>
+
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 data-i18n="publications.linkedin">LinkedIn</h3>
+                    <p data-i18n="publications.linkedin_desc">Professional profile and career information</p>
+                    <a href="https://www.linkedin.com/in/oscar-acosta-355438169/" target="_blank" class="resource-link">
+                        <i class="fas fa-external-link-alt"></i> View Profile
+                    </a>
+                </div>
+
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 data-i18n="publications.ltsi">LTSI Laboratory</h3>
+                    <p data-i18n="publications.ltsi_desc">Signal and Image Processing Laboratory, Université de Rennes</p>
+                    <a href="https://www.ltsi.univ-rennes1.fr/" target="_blank" class="resource-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Lab
+                    </a>
+                </div>
+
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 data-i18n="publications.istic">ISTIC</h3>
+                    <p data-i18n="publications.istic_desc">National Engineering School of Computer Science and Technologies, Université de Rennes</p>
+                    <a href="https://istic.univ-rennes.fr/" target="_blank" class="resource-link">
+                        <i class="fas fa-external-link-alt"></i> Visit School
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scientific Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="events.title">Scientific Events</h2>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-header">
+                        <h3>ISBI 2023</h3>
+                        <span class="event-badge">May 2023</span>
+                    </div>
+                    <p class="event-acronym" data-i18n="events.isbi_full">IEEE International Symposium on Biomedical Imaging</p>
+                    <p data-i18n="events.isbi_desc"><strong>General Chair</strong>. First ISBI held in Latin America, organized in Cartagena, Colombia.</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Cartagena, Colombia</span>
+                    </div>
+                    <a href="https://biomedicalimaging.org/2023/" target="_blank" class="event-link">
+                        <i class="fas fa-external-link-alt"></i> View Conference
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="news.title">News & Updates</h2>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">2026</div>
+                    <h3>Open PhD and Postdoctoral Positions</h3>
+                    <p>We are recruiting PhD students and postdoctoral researchers for exciting projects in Digital Twins and personalized radiotherapy. Join our interdisciplinary team working on cutting-edge AI and computational modeling.</p>
+                    <a href="positions.html" class="news-link">View Positions</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date" data-i18n="news.coming">Coming soon</div>
+                    <h3 data-i18n="news.placeholder">Stay tuned for latest updates</h3>
+                    <p data-i18n="news.placeholder_desc">News and announcements about research activities, publications, and events will be updated regularly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Contact Information</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4 data-i18n="contact.email">Email</h4>
+                    <a href="mailto:oscar.acosta@univ-rennes.fr">oscar.acosta@univ-rennes.fr</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4 data-i18n="contact.location">Location</h4>
+                    <p>LTSI INSERM U1099<br>Université de Rennes<br>Rennes, France</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h4 data-i18n="contact.lab">Laboratory</h4>
+                    <p data-i18n="contact.lab_info">Signal and Image Processing Laboratory</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <h4 data-i18n="contact.web">Web</h4>
+                    <a href="https://www.ltsi.univ-rennes1.fr/" target="_blank">LTSI Homepage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logos">
+                <div class="logo-item">
+                    <img src="assets/images/ltsi-logo.png" alt="LTSI Laboratory" title="LTSI - Signal and Image Processing Laboratory">
+                </div>
+                <div class="logo-item">
+                    <img src="assets/images/inserm-logo.png" alt="INSERM" title="Institut National de la Santé et de la Recherche Médicale">
+                </div>
+                <div class="logo-item">
+                    <img src="assets/images/rennes-logo.png" alt="Université de Rennes" title="Université de Rennes">
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Oscar Acosta</h4>
+                    <p data-i18n="footer.title">Full Professor - Biomedical Engineering</p>
+                    <p class="footer-subtitle">Université de Rennes | LTSI INSERM U1099</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quicklinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="footer.about">About</a></li>
+                        <li><a href="#research" data-i18n="footer.research">Research</a></li>
+                        <li><a href="#projects" data-i18n="footer.projects">Projects</a></li>
+                        <li><a href="#publications" data-i18n="footer.publications">Publications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.follow">Follow</h4>
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?hl=en&user=rHHitXEAAAAJ" target="_blank" title="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://orcid.org/0000-0002-5447-1479" target="_blank" title="ORCID">
+                            <i class="fas fa-book"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/oscar-acosta-355438169/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="funder-logos">
+                    <img src="assets/images/msca-ttrail-logo.png" alt="MSCA TTRAIL" title="Marie Skłodowska-Curie Actions - TTRAIL Doctoral Network">
+                </div>
+                <p>&copy; 2026 Oscar Acosta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
