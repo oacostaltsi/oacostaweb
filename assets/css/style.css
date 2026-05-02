@@ -678,6 +678,28 @@ ul {
     transform: translateY(-3px);
 }
 
+.project-card:nth-child(2) {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.project-card:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    height: 90%;
+    background-image: url('../images/twincart-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; 
+    z-index: -1;
+}
+
 .project-header {
     display: flex;
     justify-content: space-between;
