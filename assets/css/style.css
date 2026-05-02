@@ -180,6 +180,42 @@ ul {
     flex-wrap: wrap;
 }
 
+/* Refined Social Bar Styling */
+.nav-social {
+    display: flex;
+    gap: 1.25rem; /* Precise spacing */
+    margin-left: 2rem;
+    align-items: center;
+    list-style: none; /* Ensures no dots appear */
+}
+
+.nav-social li a {
+    color: rgba(255, 255, 255, 0.8); /* Softer white for professional look */
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05); /* Very subtle background box */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother animation */
+}
+
+.nav-social li a:hover {
+    color: #ffffff; /* Brighter on hover */
+    background: rgba(255, 255, 255, 0.15); /* More visible box */
+    border-color: var(--accent-light); /* Uses your existing light blue */
+    transform: translateY(-3px); /* Subtle lift */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tooltip style for icon description */
+.nav-social li a:after {
+    display: none; /* Keep it clean unless you want text labels */
+}
+
+
 .logo h1 {
     font-size: 1.8rem;
     font-weight: 700;

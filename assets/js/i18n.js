@@ -124,7 +124,7 @@ const translations = {
         
         // About Section
         'about.title': 'À propos',
-        'about.heading': 'Professeur des Universités à l\'Université de Rennes',
+        'about.heading': 'Professeur à l\'Université de Rennes',
         'about.intro': 'Je suis Professeur au Laboratoire de Traitement du Signal et de l\'Image (LTSI-INSERM 1099), Université de Rennes, France. Mes activités de recherche actuelles portent sur le traitement d\'images et les méthodes computationnelles pour la conception de radiothérapies innovantes et personnalisées dans la prise en charge du cancer. Ces travaux de recherche sont menés en étroite collaboration avec les cliniciens et physiciens médicaux du Centre de Lutte Contre le Cancer Eugène Marquis.',
         'about.intro2': 'Mon expertise porte sur les modèles prédictifs en radiothérapie, avec un accent particulier sur l\'introduction de méthodologies novatrices pour l\'exploration de données 3D et les jumeaux numériques. Tout au long de ma carrière, j\'ai établi un solide dossier en traitement d\'images médicales et en analyse computationnelle, contribuant à la fois à la recherche fondamentale et aux applications cliniques dans la planification du traitement du cancer et la prédiction des résultats.',
         'about.intro3': 'Présidente du Comité d\'Organisation, ISBI 2023 - le Symposium International IEEE sur l\'Imagerie Biomédicale tenu à Carthagène, Colombie. Le premier ISBI tenu en Amérique latine.',
