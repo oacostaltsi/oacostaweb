@@ -264,9 +264,9 @@ ul {
    ============================================ */
 
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #15294b 0%, #1a3b6d 100%);
     color: var(--text-light);
-    padding: 5rem var(--spacing-lg);
+    padding: 4rem var(--spacing-lg);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -284,6 +284,7 @@ ul {
     font-weight: 700;
     margin-bottom: var(--spacing-lg);
     line-height: 1.2;
+    color: white;
 }
 
 .hero-subtitle {
@@ -291,6 +292,59 @@ ul {
     margin-bottom: var(--spacing-2xl);
     opacity: 0.95;
     font-style: italic;
+}
+
+.project-funders {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--spacing-lg);
+}
+
+.project-funders img {
+    height: 54px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+    opacity: 0.9;
+}
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    text-decoration: none;
+    color: inherit;
+}
+.project-link:hover h3 {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+.project-link:hover .project-logo {
+    transform: scale(1.05);
+}
+
+.project-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.project-funders img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.erapermed-logo {
+    height: 43px !important;
+}
+
+.msca-logo {
+    height: 60px !important;
 }
 
 .hero-meta {
@@ -600,22 +654,22 @@ ul {
 }
 
 .project-card:first-child {
-    background: linear-gradient(rgba(0, 61, 128, 0.85), rgba(0, 82, 163, 0.85)), url('assets/images/ttrail-logo.png') center/cover;
-    color: white;
+    background: var(--bg-white);
+    color: inherit;
 }
 
 .project-card:first-child .project-card h3,
 .project-card:first-child h3 {
-    color: white;
+    color: var(--primary-color);
 }
 
 .project-card:first-child .project-acronym,
 .project-card:first-child .project-meta {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-dark);
 }
 
 .project-card:first-child p {
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--text-dark);
 }
 
 .project-card:hover {
@@ -638,9 +692,9 @@ ul {
 }
 
 .project-logo {
-    height: 50px;
+    height: 60px;
     width: auto;
-    max-width: 60px;
+    max-width: 70px;
     object-fit: contain;
     transition: var(--transition);
     cursor: pointer;
@@ -827,8 +881,10 @@ ul {
     gap: var(--spacing-2xl);
     align-items: center;
     margin-bottom: var(--spacing-2xl);
-    padding-bottom: var(--spacing-lg);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
 .logo-item {
@@ -840,32 +896,13 @@ ul {
 .logo-item img {
     height: 60px;
     width: auto;
-    opacity: 0.9;
-    transition: var(--transition);
-    filter: brightness(0) invert(1);
-}
-
-.logo-item img:hover {
     opacity: 1;
+    transition: var(--transition);
+    filter: none;
 }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-2xl);
-    margin-bottom: var(--spacing-2xl);
-}
-
-.footer-section h4 {
-    margin-bottom: var(--spacing-lg);
-    color: var(--accent-light);
-    font-size: 1.1rem;
-}
-
-.footer-section p {
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: var(--spacing-sm);
-    line-height: 1.6;
+.logo-item.large-logo img {
+    height: 80px;
 }
 
 .footer-subtitle {
@@ -928,7 +965,7 @@ ul {
 .funder-logos img {
     height: 50px;
     width: auto;
-    filter: brightness(0) invert(1);
+    filter: none;
     opacity: 0.85;
     transition: var(--transition);
 }
@@ -1089,6 +1126,114 @@ ul {
 .news-link:hover {
     background: var(--accent-light);
     transform: translateX(3px);
+}
+
+/* ============================================
+   POSITIONS PAGE STYLES
+   ============================================ */
+
+.positions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+}
+
+.position-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-2xl);
+    border-radius: 8px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.position-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.position-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-xl);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: var(--spacing-lg);
+}
+
+.position-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin: 0;
+    flex: 1;
+}
+
+.position-badge {
+    background: var(--accent-color);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: var(--spacing-lg);
+}
+
+.position-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.position-section h4 {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+}
+
+.position-section p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.position-section ul {
+    list-style: disc;
+    padding-left: var(--spacing-lg);
+    margin: 0;
+}
+
+.position-section ul li {
+    margin-bottom: var(--spacing-sm);
+    color: #666;
+    line-height: 1.6;
+}
+
+.position-section strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.why-join {
+    background: var(--bg-light);
+    padding: var(--spacing-2xl);
+    border-radius: 8px;
+    margin-top: var(--spacing-2xl);
+    text-align: center;
+}
+
+.why-join h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.why-join p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ============================================
