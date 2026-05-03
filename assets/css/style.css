@@ -370,6 +370,10 @@ ul {
     text-decoration: underline;
 }
 
+.project-card a:hover {
+    color: var(--accent-light);
+    text-decoration: none;
+}
 .project-funders img:hover {
     opacity: 1;
     transform: scale(1.05);
@@ -380,8 +384,48 @@ ul {
 }
 
 .msca-logo {
-    height: 60px !important;
+    height: 90px !important; /* Increased from 60px to 100px */
+    width: auto;
+    object-fit: contain;
+    margin-right: 10px; /* Space between the two logos */
 }
+.project-card .bretagne-logo-small {
+    height: 40px !important; /* Slightly smaller than the MSCA logo */
+    width: auto;
+    opacity: 0.9;
+}
+
+/* Ensure they sit perfectly side-by-side */
+.project-card .project-funders {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns them to the left next to each other */
+    gap: 10px;
+}
+
+/* Layout for the Bretagne logo and text stack */
+.bretagne-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Styling for the Boost Program link */
+.boost-text {
+    font-size: 0.75rem; /* Very small text */
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.boost-text:hover {
+    color: var(--accent-light);
+    text-decoration: underline;
+}
+
+
 
 .hero-meta {
     display: flex;
